@@ -1,0 +1,33 @@
+[
+ {
+  "slug": "home",
+  "title": "Home",
+  "front": true,
+  "seo_title": "Ion Power"
+ },
+ {
+  "slug": "contact-us",
+  "title": "Contact Us",
+  "seo_title": "Contact Us | Ion Power",
+  "description": "Contact ION POWER about decentralised power generated at or near the point of use."
+ },
+ {
+  "slug": "privacy-policy",
+  "title": "Privacy Policy",
+  "privacy": true,
+  "seo_title": "Privacy Policy | Ion Power",
+  "description": "How ION POWER collects, uses and protects personal data submitted through this website."
+ },
+ {
+  "slug": "terms-and-conditions",
+  "title": "Terms and Conditions",
+  "seo_title": "Terms and Conditions | Ion Power",
+  "description": "Terms governing the use of the ION POWER website and its information."
+ },
+ {
+  "slug": "cookie-policy",
+  "title": "Cookie Policy",
+  "seo_title": "Cookie Policy | Ion Power",
+  "description": "Which cookies the ION POWER website uses and how to control them."
+ }
+]

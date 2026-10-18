@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": false,
+		"layout": { "contentSize": "760px", "wideSize": "1220px" },
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{ "slug": "teal", "name": "Teal", "color": "#0DC5B9" },
+				{ "slug": "teal-dark", "name": "Deep teal", "color": "#067F77" },
+				{ "slug": "ink", "name": "Ink", "color": "#0F2A2E" },
+				{ "slug": "mint", "name": "Mint", "color": "#E4F8F6" },
+				{ "slug": "background", "name": "Background", "color": "#F5FBFA" },
+				{ "slug": "amber", "name": "Amber", "color": "#FFB547" },
+				{ "slug": "white", "name": "White", "color": "#FFFFFF" }
+			]
+		},
+		"typography": {
+			"customFontSize": true,
+			"fontFamilies": [
+				{ "slug": "display", "name": "Sora", "fontFamily": "Sora, system-ui, sans-serif" },
+				{ "slug": "text", "name": "Manrope", "fontFamily": "Manrope, system-ui, sans-serif" },
+				{ "slug": "logo", "name": "Alata", "fontFamily": "Alata, system-ui, sans-serif" }
+			]
+		},
+		"spacing": { "units": [ "px", "rem", "%", "vh", "vw" ] }
+	},
+	"styles": {
+		"spacing": { "blockGap": "1.1rem" },
+		"color": { "background": "#F5FBFA", "text": "#0F2A2E" },
+		"typography": { "fontFamily": "var(--wp--preset--font-family--text)" }
+	}
+}

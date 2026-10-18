@@ -1,0 +1,79 @@
+[
+ {
+  "key": "hero-powerlines",
+  "file": "assets/img/hero-powerlines.webp",
+  "name": "ion-power-hero-power-lines-at-dusk",
+  "title": "Power lines at dusk",
+  "alt": "Power lines at dusk with light trails"
+ },
+ {
+  "key": "city-lights",
+  "file": "assets/img/city-lights.webp",
+  "name": "ion-power-city-lights-at-night",
+  "title": "City lights at night",
+  "alt": "City lights seen from above at night"
+ },
+ {
+  "key": "card-electricity",
+  "file": "assets/img/card-electricity.webp",
+  "name": "ion-power-electricity",
+  "title": "Electricity",
+  "alt": "Electricity: lightning plug over industrial work"
+ },
+ {
+  "key": "card-powerbeyond",
+  "file": "assets/img/card-powerbeyond.webp",
+  "name": "ion-power-power-beyond",
+  "title": "Power Beyond",
+  "alt": "Power Beyond: lightning symbol over ION POWER equipment"
+ },
+ {
+  "key": "gallery-microscopy",
+  "file": "assets/img/gallery-microscopy.webp",
+  "name": "ion-power-gallery-microscopy",
+  "title": "Gallery: microscopy",
+  "alt": "Microscope images of a treated surface"
+ },
+ {
+  "key": "gallery-bubble",
+  "file": "assets/img/gallery-bubble.webp",
+  "name": "ion-power-gallery-cavitation-bubble",
+  "title": "Gallery: cavitation bubble",
+  "alt": "Cavitation bubble in liquid"
+ },
+ {
+  "key": "gallery-rotor",
+  "file": "assets/img/gallery-rotor.webp",
+  "name": "ion-power-gallery-rotor",
+  "title": "Gallery: rotor",
+  "alt": "ION POWER rotor with hazard stripes"
+ },
+ {
+  "key": "gallery-reactor",
+  "file": "assets/img/gallery-reactor.webp",
+  "name": "ion-power-gallery-copper-module",
+  "title": "Gallery: copper module",
+  "alt": "Copper module with hazard stripes"
+ },
+ {
+  "key": "gallery-sequence",
+  "file": "assets/img/gallery-sequence.webp",
+  "name": "ion-power-gallery-bubble-sequence",
+  "title": "Gallery: bubble sequence",
+  "alt": "High-speed sequence of a collapsing bubble"
+ },
+ {
+  "key": "gallery-jet",
+  "file": "assets/img/gallery-jet.webp",
+  "name": "ion-power-gallery-cavitation-jet",
+  "title": "Gallery: cavitation jet",
+  "alt": "Cavitation bubble and jet"
+ },
+ {
+  "key": "video-poster",
+  "file": "assets/img/video-poster.webp",
+  "name": "ion-power-process-of-cavitation-video",
+  "title": "The Process of Cavitation, explained",
+  "alt": "The Process of Cavitation, explained (video)"
+ }
+]

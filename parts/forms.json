@@ -1,0 +1,30 @@
+{
+ "contact": {
+  "title": "Contact",
+  "submit": "Submit",
+  "thanks": "Thanks for your submission!",
+  "fields": [
+   {
+    "key": "name",
+    "label": "Name",
+    "type": "text",
+    "required": true,
+    "max": 120
+   },
+   {
+    "key": "email",
+    "label": "Email",
+    "type": "email",
+    "required": true,
+    "max": 200
+   },
+   {
+    "key": "message",
+    "label": "Message",
+    "type": "textarea",
+    "required": true,
+    "max": 5000
+   }
+  ]
+ }
+}

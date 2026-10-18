@@ -36,7 +36,7 @@
     homeLinks.forEach((a) => { const t = document.getElementById(decodeURIComponent(new URL(a.href).hash.slice(1))); if (t) io.observe(t); });
   }
 
-  /* Hero: headline lines, intro, ion particle field */
+  /* Hero: headline lines, intro */
   const hero = $('.ionp-hero');
   if (hero) {
     const title = $('.ionp-hero-title', hero);
@@ -46,43 +46,6 @@
     }
     $$('.ionp-checks li', hero).forEach((li, i) => li.style.setProperty('--d', `${0.55 + i * 0.2}s`));
     requestAnimationFrame(() => setTimeout(() => hero.classList.add('loaded'), 60));
-    const cv = $('.ionp-ions', hero);
-    if (cv && !reduce) {
-      const ctx = cv.getContext('2d');
-      let W = 0, H = 0, pts = [], running = true;
-      const mouse = { x: -999, y: -999 };
-      const resize = () => {
-        const dpr = Math.min(devicePixelRatio || 1, 2);
-        W = cv.offsetWidth; H = cv.offsetHeight;
-        cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        const n = Math.round(Math.min(70, (W * H) / 20000));
-        pts = Array.from({ length: n }, () => ({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35, r: Math.random() * 1.8 + 0.8 }));
-      };
-      const draw = () => {
-        if (!running) return;
-        ctx.clearRect(0, 0, W, H);
-        for (const p of pts) {
-          p.x += p.vx; p.y += p.vy;
-          if (p.x < 0 || p.x > W) p.vx *= -1;
-          if (p.y < 0 || p.y > H) p.vy *= -1;
-          const dx = p.x - mouse.x, dy = p.y - mouse.y, d = Math.hypot(dx, dy);
-          if (d < 120 && d > 0) { p.x += (dx / d) * 1.2; p.y += (dy / d) * 1.2; }
-        }
-        for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
-          const a = pts[i], b = pts[j], d = Math.hypot(a.x - b.x, a.y - b.y);
-          if (d < 130) { ctx.strokeStyle = `rgba(127,231,220,${(1 - d / 130) * 0.3})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); }
-        }
-        ctx.fillStyle = 'rgba(160,240,232,.75)';
-        for (const p of pts) { ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill(); }
-        requestAnimationFrame(draw);
-      };
-      resize();
-      addEventListener('resize', resize);
-      hero.addEventListener('mousemove', (e) => { const r = cv.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
-      hero.addEventListener('mouseleave', () => { mouse.x = mouse.y = -999; });
-      new IntersectionObserver(([e]) => { const was = running; running = e.isIntersecting; if (running && !was) draw(); }).observe(cv);
-      draw();
-    }
   }
 
   /* Ticker band: "a / b / c" becomes a moving strip */

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 (2026-10-18)
+
+- Removed the moving dots-and-lines particle animation from the homepage hero. Pages already set up need no update step: the old animation element is hidden by the theme.
+
 ## 0.1.1 (2026-10-18)
 
 - The repository is public: updates work without a GitHub token, and the "Connect updates" notice is gone (an optional token box remains for a private repository).
